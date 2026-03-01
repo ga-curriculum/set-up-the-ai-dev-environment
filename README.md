@@ -161,50 +161,7 @@ Before writing complex code, developers use tools like **Postman** to test if th
 
 ## 5. Lab: Connecting to the OpenAI API
 
-**Objective:** Set up a local environment, connect to the OpenAI API using Postman and Node.js, and test authentication. 
-
-### Part A: The Postman Test
-
-1. **Configure Postman:**
-* **Method:** POST
-* **URL:** `https://api.openai.com/v1/chat/completions`
-* **Headers:** `Content-Type: application/json`
-* **Auth:** Bearer Token (Paste your new OpenAI Key)
-
-
-2. **The Payload:**
-```json
-{
-  "model": "gpt-3.5-turbo",
-  "messages": [{"role": "user", "content": "Hello, are you working?"}]
-}
-
-```
-
-
-3. **Execute:** Click Send. A 200 OK status means your environment is valid.
-
-### Part B: The Code Connection
-
-1. Initialize a Node.js project: `npm init -y`.
-2. Install dependencies: `npm install dotenv openai`.
-3. Create a `.env` file and add your key: `OPENAI_API_KEY=sk-...`.
-4. Create a `.gitignore` file and add: `.env`.
-5. Create `test-connect.js`:
-
-```javascript
-require('dotenv').config();
-
-console.log("Checking for key...");
-if (process.env.OPENAI_API_KEY) {
-    console.log("Success: API Key found in environment variables.");
-} else {
-    console.error("Error: API Key not found. Check your .env file.");
-}
-
-```
-
-6. **Run:** `node test-connect.js`.
+Refer: [**Connecting to the OpenAI API**](https://git.generalassemb.ly/build-ai-powered-web-apps/Lab2_Connecting-to-the-OpenAI-API)
 
 ---
 
