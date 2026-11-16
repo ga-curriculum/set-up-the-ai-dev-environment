@@ -161,7 +161,7 @@ Before writing complex code, developers use tools like **Postman** to test if th
 
 ## 5. Lab: Connecting to the OpenAI API
 
-Refer: [**Connecting to the OpenAI API**](https://git.generalassemb.ly/build-ai-powered-web-apps/Lab2_Connecting-to-the-OpenAI-API)
+Refer: [**Connecting to the OpenAI API**](https://github.com/ga-curriculum/lab2-connecting-to-the-openai-api)
 
 ---
 
